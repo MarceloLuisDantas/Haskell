@@ -8,8 +8,8 @@ showResult nome esperado resultado passou
     | otherwise = do
         putStrLn "---------------------"
         printf " - Teste %s | Err ❌\n" nome
-        printf " - esperado  : %s\n" (show esperado)
-        printf " - resultado : %s\n" (show resultado)
+        printf " - esperado  : %s\n" esperado
+        printf " - resultado : %s\n" resultado
         putStrLn "---------------------"
 
 equalsInt :: String -> Int -> Int -> IO()
